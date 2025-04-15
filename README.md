@@ -1,10 +1,10 @@
 # GoAccess-Tool
 This repository contains the implementation and documentation of using **GoAccess**, an open-source real-time log analyzer, for analyzing and visualizing web server logs using interactive visual report generator that helps monitor traffic, detect suspicious behavior, and gain insight into how your web server is being accessed.
 
-## Objective
+#Objective
 The objective of this project is to demonstrate the installation and configuration of **GoAccess** in a simulated or real environment. The log data is processed, and visual insights are generated for analyzing web traffic patterns, security threats, and usage analytics.
 
-🛠️ Installation
+#Installation
 
 GoAccess can be installed on most Linux distributions, macOS, and even on WSL (Windows Subsystem for Linux). Below are detailed instructions for each:
 
@@ -45,7 +45,7 @@ Launch WSL and follow the Ubuntu/Debian steps mentioned above.
 ✅ This method allows full Linux command-line support, including GoAccess.
 
 
-💡 Use Cases:
+#Use Cases💡:
 GoAccess proves to be a powerful tool in a variety of real-world scenarios:
 
 - View real-time analytics of HTTP status codes  

@@ -4,25 +4,45 @@ This repository contains the implementation and documentation of using **GoAcces
 ## Objective
 The objective of this project is to demonstrate the installation and configuration of **GoAccess** in a simulated or real environment. The log data is processed, and visual insights are generated for analyzing web traffic patterns, security threats, and usage analytics.
 
-⚙️ Installation
-🖥️ Environment:
-OS: Ubuntu 22.04 LTS (tested on WSL as well as native Linux)
+🛠️ Installation
 
-Web Server: Apache2 (sample logs located at /var/log/apache2/access.log)
+GoAccess can be installed on most Linux distributions, macOS, and even on WSL (Windows Subsystem for Linux). Below are detailed instructions for each:
 
-Log Format: Combined (common for most servers)
+✅ For Ubuntu/Debian (Linux-based systems):
 
-🛠️ Installation Steps:
-
-For Linux-based systems (Ubuntu/Debian):
-bash
+Update your package lists:
 
 sudo apt update
 
+Install GoAccess:
+
 sudo apt install goaccess -y
 
-For macOS:
+Verify the installation:
+
+goaccess --version
+
+🍎 For macOS (using Homebrew):
+
+Make sure Homebrew is installed. If not, install it:
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+Install GoAccess using Homebrew:
+
 brew install goaccess
+
+Verify the installation:
+
+goaccess --version
+
+🪠 For Windows (via WSL - Windows Subsystem for Linux):
+
+Enable WSL and install a Linux distribution (e.g., Ubuntu) from the Microsoft Store.
+
+Launch WSL and follow the Ubuntu/Debian steps mentioned above.
+
+✅ This method allows full Linux command-line support, including GoAccess.
 
 
 💡 Use Cases:

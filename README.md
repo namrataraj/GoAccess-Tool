@@ -1,7 +1,7 @@
 # GoAccess-Tool
 This repository contains the implementation and documentation of using **GoAccess**, an open-source real-time log analyzer, for analyzing and visualizing web server logs using interactive visual report generator that helps monitor traffic, detect suspicious behavior, and gain insight into how your web server is being accessed.
 
-#Objective
+##Objective
 The objective of this project is to demonstrate the installation and configuration of **GoAccess** in a simulated or real environment. The log data is processed, and visual insights are generated for analyzing web traffic patterns, security threats, and usage analytics.
 
 #Installation

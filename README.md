@@ -6,15 +6,19 @@ The objective of this project is to demonstrate the installation and configurati
 
 ⚙️ Installation
 🖥️ Environment:
-•	OS: Ubuntu 22.04 LTS (tested on WSL as well as native Linux)
-•	Web Server: Apache2 (sample logs located at /var/log/apache2/access.log)
-•	Log Format: Combined (common for most servers)
+OS: Ubuntu 22.04 LTS (tested on WSL as well as native Linux)
+
+Web Server: Apache2 (sample logs located at /var/log/apache2/access.log)
+
+Log Format: Combined (common for most servers)
 
 🛠️ Installation Steps:
 
 For Linux-based systems (Ubuntu/Debian):
 bash
+
 sudo apt update
+
 sudo apt install goaccess -y
 
 For macOS:

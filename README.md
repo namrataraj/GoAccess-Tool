@@ -4,7 +4,7 @@ This repository contains the implementation and documentation of using **GoAcces
 ## Objective
 The objective of this project is to demonstrate the installation and configuration of **GoAccess** in a simulated or real environment. The log data is processed, and visual insights are generated for analyzing web traffic patterns, security threats, and usage analytics.
 
-#Installation
+## Installation
 
 GoAccess can be installed on most Linux distributions, macOS, and even on WSL (Windows Subsystem for Linux). Below are detailed instructions for each:
 
@@ -45,7 +45,7 @@ Launch WSL and follow the Ubuntu/Debian steps mentioned above.
 ✅ This method allows full Linux command-line support, including GoAccess.
 
 
-#Use Cases💡:
+## Use Cases💡:
 GoAccess proves to be a powerful tool in a variety of real-world scenarios:
 
 - View real-time analytics of HTTP status codes  

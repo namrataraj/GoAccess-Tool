@@ -1,0 +1,22 @@
+127.0.0.1 - - [01/Apr/2025:09:55:00 +0000] "GET /index.html HTTP/1.1" 200 1024 "-" "Mozilla/5.0"
+127.0.0.1 - - [01/Apr/2025:09:55:01 +0000] "POST /login HTTP/1.1" 302 512 "-" "Mozilla/5.0"
+192.168.1.1 - - [01/Apr/2025:09:55:02 +0000] "GET /dashboard HTTP/1.1" 200 2048 "-" "Mozilla/5.0"
+
+# SQL Injection Attack
+192.168.1.101 - - [01/Apr/2025:10:00:00 +0000] "GET /index.php?id=1' OR '1'='1 HTTP/1.1" 200 512 "-" "Mozilla/5.0"
+192.168.1.101 - - [01/Apr/2025:10:00:05 +0000] "GET /index.php?id=1' UNION SELECT username, password FROM users-- HTTP/1.1" 200 512 "-" "Mozilla/5.0"
+
+# XSS Attack
+192.168.1.102 - - [01/Apr/2025:10:10:00 +0000] "GET /search?q=<script>alert('XSS')</script> HTTP/1.1" 200 1024 "-" "Mozilla/5.0"
+192.168.1.102 - - [01/Apr/2025:10:10:10 +0000] "GET /search?q=<img src='x' onerror='alert(1)'> HTTP/1.1" 200 1024 "-" "Mozilla/5.0"
+
+# Directory Traversal Attack
+192.168.1.103 - - [01/Apr/2025:11:00:00 +0000] "GET /uploads/../../etc/passwd HTTP/1.1" 200 512 "-" "Mozilla/5.0"
+192.168.1.103 - - [01/Apr/2025:11:00:05 +0000] "GET /images/../../../../etc/hosts HTTP/1.1" 200 512 "-" "Mozilla/5.0"
+
+# Brute Force Attack
+192.168.1.104 - - [01/Apr/2025:12:00:00 +0000] "POST /wp-login.php HTTP/1.1" 200 512 "-" "Mozilla/5.0"
+192.168.1.104 - - [01/Apr/2025:12:00:05 +0000] "POST /wp-login.php HTTP/1.1" 200 512 "-" "Mozilla/5.0"
+192.168.1.104 - - [01/Apr/2025:12:00:10 +0000] "POST /wp-login.php HTTP/1.1" 403 512 "-" "Mozilla/5.0"
+192.168.1.104 - - [01/Apr/2025:12:00:15 +0000] "POST /wp-login.php HTTP/1.1" 403 512 "-" "Mozilla/5.0"
+

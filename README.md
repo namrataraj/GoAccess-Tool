@@ -67,3 +67,21 @@ GoAccess proves to be a powerful tool in a variety of real-world scenarios:
 - Evaluate effectiveness of firewalls or security rules  
   Cross-reference blocked requests and failed attempts with firewall or IDS configurations.  
   Useful for refining security rules and understanding if they are successfully mitigating threats.
+
+
+## Issues:
+Log Format Misconfiguration:
+
+    If the log format (COMBINED, COMMON, etc.) isn't correctly specified, GoAccess will not parse the logs properly or may show incorrect data.
+
+    Example: Apache vs Nginx logs may need different --log-format options.
+
+Real-Time HTML Dashboard Issues:
+
+    Real-time dashboard might not update if WebSocket support is not configured properly or if required ports (e.g., 7890) are blocked by the firewall.
+
+    May also require a proper reverse proxy setup with WebSocket support (e.g., in Nginx).
+
+Permission or Access Issues:
+
+    GoAccess may not be able to read the log files due to permission errors, especially if logs are owned by root or a web server user like www-data
